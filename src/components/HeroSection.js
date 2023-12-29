@@ -4,6 +4,7 @@ import "./HeroSection.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { CapacityItem } from "./CapacityItem";
 
 function HeroSection() {
   const settings = {
@@ -359,6 +360,40 @@ function HeroSection() {
               </>
             ))}
           </Slider>
+        </div>
+      </div>
+      <div className="testimony-card">
+        <h3>
+          "I've never encountered such a remarkably efficient service as
+          TropicMed. When I was unwell and unable to leave my home for a
+          doctor's visit or medication, TropicMed came to my rescue. In just 30
+          minutes, I could consult with a doctor, receive a prescription, place
+          my order, and have my medication delivered."
+        </h3>
+        <img src="/assets/Rectangle 93.jpg" />
+      </div>
+      <div className="capacity-card">
+        <div className="capacity-card-content">
+          <div className="capacity-counter">
+            {CapacityItem.map((d) => (
+              <>
+                <div className="capacity-icon">
+                  <img src={d.icon} />
+                  <h3>{d.counter}</h3>
+                  <p>{d.text}</p>
+                </div>
+              </>
+            ))}
+          </div>
+          <div className="capacity-content">
+            <p>
+              <b>Our</b> capacity ensures that we are there to serve your health need at
+              every given point in time. Our partners (Pharmacies, doctors, Test
+              labs, Insurance company and delivery system) provide top quality
+              products as well as services. Our services and products are in
+              accordance with all regulations and standards.
+            </p>
+          </div>
         </div>
       </div>
     </>
