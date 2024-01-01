@@ -396,6 +396,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }
