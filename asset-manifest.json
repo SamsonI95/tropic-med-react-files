@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tropic-med-react-files/static/css/main.45c5c230.css",
+    "main.js": "/tropic-med-react-files/static/js/main.e5bf38d9.js",
+    "static/media/slick.svg": "/tropic-med-react-files/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/tropic-med-react-files/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/tropic-med-react-files/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/tropic-med-react-files/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/tropic-med-react-files/index.html",
+    "main.45c5c230.css.map": "/tropic-med-react-files/static/css/main.45c5c230.css.map",
+    "main.e5bf38d9.js.map": "/tropic-med-react-files/static/js/main.e5bf38d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45c5c230.css",
+    "static/js/main.e5bf38d9.js"
+  ]
+}
