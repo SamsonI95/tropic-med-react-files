@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CapacityItem } from "./CapacityItem";
+import { storyData } from "./storyData";
 
 function HeroSection() {
   const settings = {
@@ -387,16 +388,42 @@ function HeroSection() {
           </div>
           <div className="capacity-content">
             <p>
-              <b>Our</b> capacity ensures that we are there to serve your health need at
-              every given point in time. Our partners (Pharmacies, doctors, Test
-              labs, Insurance company and delivery system) provide top quality
-              products as well as services. Our services and products are in
-              accordance with all regulations and standards.
+              <b>Our</b> capacity ensures that we are there to serve your health
+              need at every given point in time. Our partners (Pharmacies,
+              doctors, Test labs, Insurance company and delivery system) provide
+              top quality products as well as services. Our services and
+              products are in accordance with all regulations and standards.
             </p>
           </div>
         </div>
       </div>
-      
+      <div className="feature-story-container">
+        <div className="feature-story-header">
+          <h3>Featured Stories</h3>
+          <div className="feature-rectangle"></div>
+        </div>
+        <div className="stories-contianer">
+          <div className="stories-card-item">
+            {storyData.map((d) => (
+              <>
+                <div className="stories-card">
+                  <img src={d.image} />
+                  <h3>{d.header}</h3>
+                  <h4>{d.description}</h4>
+                  <div className="stories-card-bottom">
+                    <img src={d.userImage} id="userImage" />
+                    <p>{d.userName}</p>
+                    <h5>{d.date}</h5>
+                  </div>
+                </div>
+              </>
+            ))}
+          </div>
+        </div>
+        <div className="feature-story-footer">
+          <p>See more stories</p>
+        </div>
+      </div>
     </>
   );
 }
